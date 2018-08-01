@@ -7,47 +7,59 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 
 </head>
 
 <body>
+
     <div class="container-fluid">
 
 
-        <div class="row">
-            <div class="col">
+        <div class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col-10 text-center">
                 <img src="img/pessoa.jpg" alt="Imagem central de uma pessoa" id="perfil" class="img-responsive">
             </div>
+            <div class="col-1"></div>
         </div>
 
-
-        <div class="row">
-            <div class="col">
+        <div class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p class="biografia">Esse é o meu perfil, seja muito bem vindo!! Estas são algumas das fotos tiradas por mim, espero que goste,
+                    todas representam uma ótima lembrança!!!</p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div id="conteudo" class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-facebook"></i>
+                        <a class="nav-link" href="https://www.facebook.com/alisson.dinocosta">
+                            <i class="btn fab fa-facebook" title="https://www.facebook.com/alisson.dinocosta"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://twitter.com/redbluegames">
+                            <i class="btn fab fa-twitter-square" title="https://twitter.com/redbluegames"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/?hl=pt-br">
+                            <i class="fab fa-instagram btn" title="https://www.instagram.com/?hl=pt-br"></i>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-500px btn" title="Nao sei o que é isso!"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">
-                            <i class="fab fa-500px"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">
-                            <i class="fas fa-envelope"></i>
+                        <a class="nav-link" href="https://mail.google.com/mail/u/0/?zx=wde5wo1z6wkm#inbox   ">
+                            <i class="far fa-envelope btn" title="https://mail.google.com/mail/u/0/?zx=wde5wo1z6wkm#inbox"></i>
                         </a>
                     </li>
                 </ul>
@@ -61,42 +73,71 @@
                 <div class="card-columns">
 
 
-                    <div class="card">
-                        <img class="card-img-top image-responsive" src="img/predio_img1.jpg" alt="Uma fotografia de um prédio!">
+                    <div data-aos="flip-left"  data-aos-duration="1700" class="card">
+                        <img data-featherlight="img/predio_img1.jpg" class="card-img-top image-responsive card-medio rounded shadow" src="img/predio_img1.jpg" alt="Uma fotografia de um prédio!" id="imagem-teste">
+                        <div class="overlay card-img-top image-responsive card-medio rounded shadow">
+                            <div class="text">Gosto muito desta, é um legítimo aranha-céus, uma obra prima!</div>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem dolorem sit amet dolor!</p>
+                            <p class="card-text">Gosto muito desta, é um legítimo aranha-céus, uma obra prima!</p>
                         </div>
                     </div>
                     <div class="card text-center">
-                        <img class="card-img-top image-responsive" src="img/predio_img1.jpg" alt="Uma fotografia de um prédio!">
+                        <img data-aos="zoom-in-down" data-aos-duration="1700" class="card-img-top image-responsive rounded shadow" src="img/mae_bebe_img5.jpg" alt="Foto de mamãe e seu bebe!">
+                        <div class="overlay card-img-top image-responsive rounded">
+                            <div class="text">Uma linda mamãe aproveitando o por do sol com seu bebê!</div>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">Essa é a imagem!</p>
+                            <p class="card-text">Uma linda mamãe aproveitando o por do sol com seu bebê!</p>
                         </div>
                     </div>
                     <div class="card text-right">
-                        <img class="card-img-top image-responsive card-mais-alto" src="img/predio_img1.jpg" alt="Uma fotografia de um prédio!">
+                        <img class="card-img-top image-responsive rounded shadow h-100" src="img/floresta_img4.jpg" alt="Foto de uma floresta.">
+
+                        <div id="grande" class="overlay card-img-top card-img-top image-responsive rounded shadow h-100">
+                            <div class="text">Uma estrada em meio a floresta próximo a casa dos meus pais, linda não é?</div>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">Essa é a imagem!Essa é a imagem!!</p>
+                            <p class="card-text">Uma estrada em meio a floresta próximo a casa dos meus pais, linda não é?</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top image-responsive" src="img/predio_img1.jpg" alt="Uma fotografia de um prédio!">
+                        <img  data-aos="flip-right" data-aos-duration="1700" class="card-img-top image-responsive rounded shadow img-media" src="img/trem_img2.jpg" alt="Fotografia de trem!">
+                        <div class="overlay card-img-top image-responsive rounded shadow img-media">
+                            <div class="text">Viajar de trem é um dos meus hobbies, aproveitei uma viagem para tirar esta foto!!</div>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem dolorem sit amet dolor!</p>
+                            <p class="card-text">Viajar de trem é um dos meus hobbies, aproveitei uma viagem para tirar esta foto!!</p>
                         </div>
                     </div>
                     <div class="card text-center">
-                        <img class="card-img-top image-responsive" src="img/predio_img1.jpg" alt="Uma fotografia de um prédio!">
+                        <img data-aos="zoom-in-down" data-aos-duration="1700" class="card-img-top image-responsive rounded shadow img-media" src="img/neve_img6.jpg" alt="Uma fotografia de um prédio!" id="foto_neve">
+                        <div class="overlay card-img-top image-responsive rounded shadow img-media">
+                            <div class="text">Você gosta de frio? Sempre neva onde moro, então, mas uma foto para lista né!</div>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem dolorem sit amet dolor!</p>
+                            <p class="card-text">Você gosta de frio? Sempre neva onde moro, então, mas uma foto para lista né!</p>
                         </div>
                     </div>
                     <div class="card text-right">
-                        <img class="card-img-top image-responsive" src="img/predio_img1.jpg" alt="Uma fotografia de um prédio!">
+                        <img data-aos="zoom-out-left" data-aos-duration="1700" class="card-img-top image-responsive rounded shadow img-media" src="img/lago_img7.jpg" alt="Um lago azul.">
+                        <div class="overlay card-img-top image-responsive rounded shadow img-media">
+                            <div class="text">Lagos como estes me trazem tranquilidade.</div>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem dolorem sit amet dolor!</p>
+                            <p class="card-text">Lagos como estes me trazem tranquilidade.</p>
                         </div>
                     </div>
+                    <div class="card text-center">
+                        <img data-aos="zoom-out-left" data-aos-duration="1700" class="card-img-top image-responsive rounded shadow img-media" src="img/pes_img8.jpg" alt="Sandálias na areia.">
+                        <div class="overlay card-img-top image-responsive rounded shadow img-media">
+                            <div class="text">Por enquanto é isso, logo postarei mais fotos, inté!</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Por enquanto é isso, logo postarei mais fotos, inté!</p>
+                        </div>
+                    </div>
+
 
                 </div>
 
@@ -107,8 +148,15 @@
 
     </div>
     </div>
-
-
+    <script src="https://unpkg.com/tippy.js@2.5.4/dist/tippy.all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        AOS.init();
+        tippy('.btn');
+        
+    </script>
 </body>
 
 </html>
