@@ -1,0 +1,53 @@
+body{
+background: linear-gradient(87deg, #320b52, #4a6acc);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+
+#perfil{
+    box-sizing: border-box;
+    margin-left: 41%;
+    margin-top:11%;
+    border: 10px solid #4a6acc;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+}
+
+.nav{
+    margin-top: 5%;
+    margin-left:38%;
+}
+.card{
+    background-color: transparent;
+    border: none;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+.card-mais-alto{
+    height: 320px;
+}
